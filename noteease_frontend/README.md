@@ -34,6 +34,13 @@ In the project directory, you can run:
 Runs the app in development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
+#### Remote/Custom Host Access
+
+To help with development in containerized, remote, or local network environments, the dev server has been configured to disable host checking and listen on all interfaces (host 0.0.0.0).  
+This allows you to access the app using `http://<your_host_ip>:3000` from another device or custom hostname.  
+**Security note:** Host check disabling is ONLY for development and should not be used in production environments.
+
+
 ### `npm test`
 
 Launches the test runner in interactive watch mode.

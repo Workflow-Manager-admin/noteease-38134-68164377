@@ -8,7 +8,7 @@
     "react-scripts": "^5.0.1"
   },
   "scripts": {
-    "start": "cross-env EDIT_MODE=true webpack serve --config .ve/webpack.config.js --mode development",
+    "start": "cross-env EDIT_MODE=true DANGEROUSLY_DISABLE_HOST_CHECK=true webpack serve --config .ve/webpack.config.js --mode development --host 0.0.0.0 --disable-host-check",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
